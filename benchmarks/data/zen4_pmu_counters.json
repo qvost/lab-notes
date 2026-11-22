@@ -1,0 +1,14 @@
+{
+  "benchmark": "l2_distance_1024d",
+  "target_cpu": "AMD Ryzen 9 7950X",
+  "kernel": "Linux 6.8.0-generic",
+  "compiler": "rustc 1.82.0-nightly",
+  "metrics": {
+    "scalar_cycles_per_vector": 842.1,
+    "avx2_cycles_per_vector": 218.4,
+    "avx512_cycles_per_vector": 109.2,
+    "ipc": 2.86,
+    "l1d_cache_miss_ratio": 0.0012,
+    "branch_miss_ratio": 0.0004
+  }
+}
