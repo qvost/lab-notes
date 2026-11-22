@@ -1,0 +1,14 @@
+# Multi-Gen LRU: Page Table Scanning and Generational Aging
+
+> **Domain**: `linux-kernel` | **Author**: Siddid Pandey <qvostwon@gmail.com>
+> **Status**: Active Systems Research Note
+
+## Summary
+Generational page reclamation and tiering replacing active/inactive lists
+
+## Generational Eviction Criteria
+
+MGLRU replaces legacy two-list LRU with generational aging tiers, tracking page access frequency through page table dirty-bit scanning to reduce eviction thrashing.
+
+## Verification Status
+Validated against target architecture specifications.
