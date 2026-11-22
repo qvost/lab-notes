@@ -1,7 +1,7 @@
 {
-  "totalRuns": 3,
-  "totalCommits": 7,
-  "lastRunAt": "2026-11-22T14:46:46.954Z",
+  "totalRuns": 4,
+  "totalCommits": 9,
+  "lastRunAt": "2026-11-22T14:52:14.040Z",
   "topicProgress": {
     "eevdf-virtual-deadlines": {
       "revisions": 1,
@@ -28,6 +28,14 @@
       "created": true
     },
     "simd-avx512-distance-kernels": {
+      "revisions": 1,
+      "created": true
+    },
+    "mglru-multigen-reclamation": {
+      "revisions": 1,
+      "created": true
+    },
+    "epoch-based-reclamation-ebr": {
       "revisions": 1,
       "created": true
     }
