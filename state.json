@@ -1,7 +1,7 @@
 {
-  "totalRuns": 4,
-  "totalCommits": 9,
-  "lastRunAt": "2026-11-22T14:52:14.040Z",
+  "totalRuns": 5,
+  "totalCommits": 11,
+  "lastRunAt": "2026-11-22T14:58:43.833Z",
   "topicProgress": {
     "eevdf-virtual-deadlines": {
       "revisions": 1,
@@ -36,6 +36,14 @@
       "created": true
     },
     "epoch-based-reclamation-ebr": {
+      "revisions": 1,
+      "created": true
+    },
+    "product-quantization-decomposition": {
+      "revisions": 1,
+      "created": true
+    },
+    "zero-copy-arena-allocators": {
       "revisions": 1,
       "created": true
     }
