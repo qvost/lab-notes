@@ -1,7 +1,7 @@
 {
-  "totalRuns": 2,
-  "totalCommits": 5,
-  "lastRunAt": "2026-11-22T14:33:50.692Z",
+  "totalRuns": 3,
+  "totalCommits": 7,
+  "lastRunAt": "2026-11-22T14:46:46.954Z",
   "topicProgress": {
     "eevdf-virtual-deadlines": {
       "revisions": 1,
@@ -20,6 +20,14 @@
       "created": true
     },
     "disruptor-ring-buffer": {
+      "revisions": 1,
+      "created": true
+    },
+    "hazard-pointers-smr": {
+      "revisions": 1,
+      "created": true
+    },
+    "simd-avx512-distance-kernels": {
       "revisions": 1,
       "created": true
     }
