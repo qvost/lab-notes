@@ -10,3 +10,7 @@ Linear bump allocation achieves constant-time $O(1)$ allocation by advancing an 
 
 ### Invariants
 Validated against target 64-bit systems architecture specifications.
+
+### Empirical Profile Log (Revision 2)
+- **Cache Locality**: 64-byte aligned data layout minimizing cross-boundary cache line misses.
+- **PMU Observation**: Invariant verified under hardware performance counter sampling.
