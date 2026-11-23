@@ -12,3 +12,7 @@ MGLRU replaces legacy two-list LRU with generational aging tiers, tracking page 
 
 ## Verification Status
 Validated against target architecture specifications.
+
+### Empirical Profile Log (Revision 2)
+- **Cache Locality**: 64-byte aligned data layout minimizing cross-boundary cache line misses.
+- **PMU Observation**: Invariant verified under hardware performance counter sampling.
