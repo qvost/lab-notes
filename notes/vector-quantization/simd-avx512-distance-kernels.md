@@ -12,3 +12,7 @@ Using `_mm512_dpbusd_epi32` (AVX-512 VNNI), the processor calculates four 8-bit 
 
 ## Verification Status
 Validated against target architecture specifications.
+
+### Empirical Profile Log (Revision 2)
+- **Cache Locality**: 64-byte aligned data layout minimizing cross-boundary cache line misses.
+- **PMU Observation**: Invariant verified under hardware performance counter sampling.
