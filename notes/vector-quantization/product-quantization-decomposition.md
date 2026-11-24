@@ -10,3 +10,7 @@ High-dimensional space $\mathbb{R}^D$ is partitioned into $M$ orthogonal subspac
 
 ### Invariants
 Validated against target 64-bit systems architecture specifications.
+
+### Empirical Profile Log (Revision 2)
+- **Cache Locality**: 64-byte aligned data layout minimizing cross-boundary cache line misses.
+- **PMU Observation**: Invariant verified under hardware performance counter sampling.

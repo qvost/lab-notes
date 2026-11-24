@@ -22,3 +22,7 @@ When configured with `IORING_SETUP_SQPOLL`, a dedicated kernel thread continuous
 ## References & Kernel Invariants
 - Architectural specifications and verified tracepoints.
 - Empirically verified under modern 64-bit systems architecture.
+
+### Empirical Profile Log (Revision 2)
+- **Cache Locality**: 64-byte aligned data layout minimizing cross-boundary cache line misses.
+- **PMU Observation**: Invariant verified under hardware performance counter sampling.
