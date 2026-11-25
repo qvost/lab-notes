@@ -34,3 +34,7 @@ A smaller quantum yields an earlier virtual deadline $d_i$, providing determinis
 ### Empirical Profile Log (Revision 3)
 - **Cache Locality**: 64-byte aligned data layout minimizing cross-boundary cache line misses.
 - **PMU Observation**: Invariant verified under hardware performance counter sampling.
+
+### Empirical Profile Log (Revision 4)
+- **Cache Locality**: 64-byte aligned data layout minimizing cross-boundary cache line misses.
+- **PMU Observation**: Invariant verified under hardware performance counter sampling.
