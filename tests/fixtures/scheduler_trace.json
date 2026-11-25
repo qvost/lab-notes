@@ -1,0 +1,9 @@
+{
+  "trace_version": 1,
+  "clock_unit": "nanoseconds",
+  "events": [
+    { "at": 0, "kind": "enqueue", "task": 17, "queue_depth": 1 },
+    { "at": 12000, "kind": "dispatch", "task": 17, "worker": 2 },
+    { "at": 38000, "kind": "complete", "task": 17, "worker": 2 }
+  ]
+}

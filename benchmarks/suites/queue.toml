@@ -1,0 +1,6 @@
+name = "bounded-queue-baseline"
+command = "cargo bench --bench bounded_queue"
+description = "Measures push/pop pairs for the mutex-backed correctness baseline."
+warmup_iterations = 10000
+measurement_iterations = 1000000
+required_metadata = ["cpu", "os", "rustc", "allocator"]

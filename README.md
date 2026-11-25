@@ -1,8 +1,16 @@
-# Systems Research & Engineering Notebook
+# Strata Core: Systems Research & Engineering Notebook
 
 Personal laboratory notebook, micro-benchmarks, and implementation notes on low-level systems architectures, Linux kernel internals, non-blocking concurrency, and cache-conscious memory layouts.
 
 Maintained by **Siddid Pandey** ([qvostwon@gmail.com](mailto:qvostwon@gmail.com)) at **Shaligram Labs**.
+
+The repository now includes a dependency-free Rust crate, `strata-core`, for
+small correctness-first systems prototypes. Queue and pointer APIs document
+their synchronization and reclamation boundaries; timing and quantization
+helpers are deterministic; benchmark records are added only after measurement.
+
+Run the integration suite with `cargo test` and the queue baseline with
+`cargo bench --bench bounded_queue`.
 
 ---
 
@@ -42,11 +50,25 @@ Maintained by **Siddid Pandey** ([qvostwon@gmail.com](mailto:qvostwon@gmail.com)
 │   ├── lock-free/
 │   ├── vector-quantization/
 │   └── rust-memory/
-├── src/                       # Micro-implementations (C, Rust, eBPF)
+├── src/                       # Rust crate and existing C/Rust prototypes
+│   ├── core/                  # Bounded queue, atomic link, hazard slot
+│   ├── engine/                # Virtual time and drift model
+│   └── quantization/          # Scalar int8 and greedy graph traversal
 │   ├── arena.rs               # Cache-aligned monotonic bump allocator
-│   ├── hazard.rs              # Atomic hazard pointer record
+│   ├── hazard.rs              # Existing atomic hazard pointer record
 │   ├── disruptor_ring.c       # False-sharing padded ring cursor
 │   └── slub_canary.c          # SLUB freelist XOR pointer encode/decode
+├── tests/
+│   ├── integration/           # Invariant and concurrent queue checks
+│   └── fixtures/              # Scheduler trace input
+├── docs/
+│   ├── rfc/                   # Architecture proposals
+│   └── research/              # Cross-topic research summaries
+├── benchmarks/
+│   ├── results/               # Measured, dated results only
+│   └── suites/                # Benchmark executable and metadata
+├── Cargo.toml                # `strata-core` crate manifest
+├── CHANGELOG.md
 ├── benches/                   # Hardware-calibrated micro-benchmarks
 │   └── simd_l2.rs             # Scalar vs AVX2 vs AVX-512 L2 distance
 ├── benchmarks/data/           # Hardware PMU logs and latency profiles

@@ -1,0 +1,18 @@
+[package]
+name = "strata-core"
+version = "0.1.0"
+edition = "2021"
+description = "Small systems prototypes for queues, virtual time, and vector search"
+license = "MIT"
+
+[lib]
+path = "src/lib.rs"
+
+[[bench]]
+name = "bounded_queue"
+path = "benchmarks/suites/bounded_queue.rs"
+harness = false
+
+[[test]]
+name = "integration-invariants"
+path = "tests/integration/invariants.rs"
