@@ -11,3 +11,5 @@ All notable project changes are recorded here.
 - Added integration coverage, a scheduler trace fixture, and a reproducible
   benchmark definition without prefilled performance claims.
 - Added RFC-004 documenting the current hazard-pointer boundary and its limits.
+
+- `2026-11-26 16:31`: docs(linux): add epoll-edge-drain-invariants analysis
