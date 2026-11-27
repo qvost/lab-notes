@@ -13,3 +13,5 @@ All notable project changes are recorded here.
 - Added RFC-004 documenting the current hazard-pointer boundary and its limits.
 
 - `2026-11-26 16:31`: docs(linux): add epoll-edge-drain-invariants analysis
+
+- `2026-11-27 17:47`: docs(concurrency): refine hazard-pointer-epoch-reclamation analysis
