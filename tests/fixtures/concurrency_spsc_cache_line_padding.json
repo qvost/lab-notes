@@ -1,0 +1,11 @@
+{
+  "suite": "concurrency",
+  "case": "spsc-cache-line-padding",
+  "updated_at": "2026-11-27T17:47:47.739535+05:45",
+  "seed": 82487,
+  "expected_invariants": [
+    "no_lost_events",
+    "bounded_drift",
+    "monotonic_cursor"
+  ]
+}
