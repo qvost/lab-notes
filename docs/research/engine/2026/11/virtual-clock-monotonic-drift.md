@@ -8,3 +8,6 @@ Deterministic tsc-to-nanosecond scaling with bounded drift injection in hermetic
 
 ## Invariants & Observations
 - Verified memory ordering and cache-line alignment boundaries at `2026-11-28 09:00:34 +0545`.
+
+### Revision (2026-11-28 18:01:35 +0545)
+- Re-validated boundary conditions for `virtual-clock-monotonic-drift` under contention.
