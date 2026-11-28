@@ -1,0 +1,11 @@
+{
+  "suite": "linux",
+  "case": "epoll-edge-drain-invariants",
+  "updated_at": "2026-11-28T18:02:41.716952+05:45",
+  "seed": 23592,
+  "expected_invariants": [
+    "no_lost_events",
+    "bounded_drift",
+    "monotonic_cursor"
+  ]
+}

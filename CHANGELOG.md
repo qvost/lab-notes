@@ -21,3 +21,5 @@ All notable project changes are recorded here.
 - `2026-11-28 09:00`: docs(engine): add virtual-clock-monotonic-drift analysis
 
 - `2026-11-28 18:01`: docs(rust): add maybeuninit-ring-buffer-safety analysis
+
+- `2026-11-28 18:02`: docs(concurrency): add spsc-cache-line-padding analysis
