@@ -1,0 +1,11 @@
+{
+  "suite": "linux",
+  "case": "uffd-wp-async-dirty-pages",
+  "updated_at": "2026-11-28T18:01:35.878064+05:45",
+  "seed": 80553,
+  "expected_invariants": [
+    "no_lost_events",
+    "bounded_drift",
+    "monotonic_cursor"
+  ]
+}
