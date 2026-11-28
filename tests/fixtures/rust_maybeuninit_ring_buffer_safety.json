@@ -1,8 +1,8 @@
 {
   "suite": "rust",
   "case": "maybeuninit-ring-buffer-safety",
-  "updated_at": "2026-11-26T16:31:30.656444+05:45",
-  "seed": 29567,
+  "updated_at": "2026-11-28T09:00:34.355435+05:45",
+  "seed": 18072,
   "expected_invariants": [
     "no_lost_events",
     "bounded_drift",
