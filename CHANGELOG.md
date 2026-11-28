@@ -19,3 +19,5 @@ All notable project changes are recorded here.
 - `2026-11-27 20:23`: docs(engine): add seccomp-unotify-openat-filter analysis
 
 - `2026-11-28 09:00`: docs(engine): add virtual-clock-monotonic-drift analysis
+
+- `2026-11-28 18:01`: docs(rust): add maybeuninit-ring-buffer-safety analysis
